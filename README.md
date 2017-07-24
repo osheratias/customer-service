@@ -1,5 +1,5 @@
 ## Customers microservice
-This service provides coustomers REST API.
+This service provides customers REST API.
 This service is one part of a larger micro services example app.
 
 ### How to run
