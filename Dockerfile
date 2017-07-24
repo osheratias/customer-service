@@ -4,6 +4,8 @@ COPY . /app
 
 WORKDIR /app
 
+ENV DB_LOCATION /app/customers.db
+
 RUN ["dotnet", "restore"]
 
 RUN ["dotnet", "build"]
