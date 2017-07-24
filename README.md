@@ -24,7 +24,7 @@ docker build . -t <my-private-repo>/customer-service:1.0.0
 
 Then run the image using:
 ```
-docker run -e DB_LOCATION='<path-to-db-file>' -p 5000:5000 <my-private-repo>/customer-service:1.0.0
+docker run --name customer-service -e DB_LOCATION='<path-to-db-file>' -p 5000:5000 <my-private-repo>/customer-service:1.0.0
 ```
 
 ### Creating the db
