@@ -1,7 +1,5 @@
-
-
 FROM microsoft/dotnet:latest
-RUN adduser runneruser
+RUN adduser --disabled-password --gecos "" runneruser
 COPY . /app
 WORKDIR /app
 ENV DB_LOCATION /app/customers.db
